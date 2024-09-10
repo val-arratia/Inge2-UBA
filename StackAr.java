@@ -55,6 +55,7 @@ public class StackAr {
 
     //@ requires this.size() < this.elems.length;
     //@ ensures this.size() == \old(this.size())+1 && this.elems[this.top] == o ;
+
     public void push(int o) {
         // TODO: IMPLEMENTAR
         this.top++;
@@ -63,14 +64,15 @@ public class StackAr {
     }
 
     //@ requires this.size() > 0;
-    //@ ensures \result == this.elems[this.top];
-    //@ ensures this.size() == \old(this.size())-1 ;
+    //@ ensures \result == this.elems[\old(this.top)];
+    //@ ensures this.size() == \old(this.size())-1  ;
+
     public int pop() {
         // TODO: IMPLEMENTAR
-      //  int m = this.elems[this.top];
+        int m = this.elems[this.top];
         this.top--;
         //@ show this.top, this.elems.length;
-        return this.elems[this.top+1];
+        return m;
     }
 
     //@ requires this.size() > 0 ;
