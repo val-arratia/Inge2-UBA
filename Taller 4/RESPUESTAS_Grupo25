@@ -1,0 +1,53 @@
+Ejercicio 1
+a) ¿Cuantos mutantes se generaron en total?
+ 74
+
+b) ¿Qu´e operador de mutaci´on gener´o m´as mutantes? ¿Cu´antos y por qu´e?
+ TrueConditionalsMutator y  FalseConditionalsMutator, 10 c/u porque 
+
+
+c) ¿Qu´e operador de mutaci´on gener´o menos mutantes? ¿Cu´antos y por qu´e?
+IncrementsMutator con 2,
+
+
+Ejercicio 2 
+a) ¿Cu´antos mutantes vivos y muertos encontraron cada uno de los test suites?
+Test suite 1
+-> Mutantes vivos: 54
+-> Mutantes muertos: 19
+
+Test suite 2
+-> Mutantes vivos: 37
+-> Mutantes muertos: 36
+
+b) ¿Cu´al es el mutation score de cada test suite?
+Test suite 1 26%
+Test suite 2 49%
+
+
+Ejercicio 3
+
+
+
+PARTE 2
+
+Ejercicio 4
+a) ¿Cu´antos casos de test produjo Randoop?
+12
+
+b) ¿Alguno de los tests generados fall´o?
+Ninguno
+
+c) ¿Cu´al es el instruction coverage alcanzado por los tests generados para la clase StackAr?
+El instruction coverage alcanzado para las instrucciones es 70%
+
+Ejercicio 5
+a) ¿Qu´e fallas fueron detectadas por los tests producidos por Randoop?
+Al hacer pop al stack no dejaba en null el tope de la pila.
+
+b) ¿Cu´al es el instruction coverage alcanzado por el ´ultimo test suite generado (aquel que no encontr´o nuevas fallas en StackAr)?
+---
+
+Ejercicio 6
+100%
+
