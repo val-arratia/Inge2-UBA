@@ -3,15 +3,17 @@ a) ¿Cuantos mutantes se generaron en total?
  74
 
 b) ¿Qu´e operador de mutaci´on gener´o m´as mutantes? ¿Cu´antos y por qu´e?
- TrueConditionalsMutator y  FalseConditionalsMutator, 10 c/u porque 
+ TrueConditionalsMutator y  FalseConditionalsMutator, 10 c/u porque estos operadores 
+afectan un número mayor de partes del código que dependen de condicionales
 
 
 c) ¿Qu´e operador de mutaci´on gener´o menos mutantes? ¿Cu´antos y por qu´e?
-IncrementsMutator con 2,
+IncrementsMutator con 2, pues este operador a diferencia de los condicionales no 
+tiene mucho alcance en el codigo, es decir, no muchas partes del codigo dependen de este operador
 
 
 Ejercicio 2 
-a) ¿Cu´antos mutantes vivos y muertos encontraron cada uno de los test suites?
+a) ¿Cuantos mutantes vivos y muertos encontraron cada uno de los test suites?
 Test suite 1
 -> Mutantes vivos: 54
 -> Mutantes muertos: 19
@@ -20,12 +22,21 @@ Test suite 2
 -> Mutantes vivos: 37
 -> Mutantes muertos: 36
 
-b) ¿Cu´al es el mutation score de cada test suite?
+b) ¿Cual es el mutation score de cada test suite?
 Test suite 1 26%
 Test suite 2 49%
 
 
 Ejercicio 3
+a) ¿Cu´al es el mutation score logrado para los tests del StackTests2 mejorado (i.e. StackTests3)?
+b) ¿Cu´antos mutantes vivos y muertos encontraron?
+c) Comente cu´ales son todos los mutantes vivos que quedaron y justifique por qu´e son mutantes
+equivalentes al programa original
+d) ¿Cu´al es el instruction coverage promedio que lograron para las clases mutadas? Puede encontrar
+este valor al final del reporte de JaCoCo para el paquete org.autotest.mutants (la ´ultima fila da
+el Total).
+e) ¿Cu´al es el peor instruction coverage que lograron para una clase mutada? ¿Por qu´e creen que
+sucede esto?
 
 
 
@@ -49,5 +60,5 @@ b) ¿Cu´al es el instruction coverage alcanzado por el ´ultimo test suite gene
 ---
 
 Ejercicio 6
-100%
+70%
 
