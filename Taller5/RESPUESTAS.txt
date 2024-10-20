@@ -5,15 +5,15 @@ El input inicial y los que obtuvimos en Z3 nos generan el siguiente test suite
 [a = 0, b = 0, c = 0] 
 [a = 1, c = 1, b = 1] 
 [a = 3, c = 1, b = 2] 
-[a = 2, b = 3, C = 2]
-[a = 2, b = 3, c = 4]
+[a = 2, b = 1, C = 2]
+[a = 2, b = 4, c = 3]
 
 al ver como se ejecuta cada uno por el codigo
 [a = 0, b = 0, c = 0] pasa por #C1, retorna "invalid" sale del programa
 [a = 1, c = 1, b = 1] pasa por #C3, retorna "equilateral" y sale del programa
 [a = 3, c = 1, b = 2] pasa por #C2, retorna "invalid" y sale del programa
-[a = 2, b = 3, C = 2] pasa por #C4, retorna "isósceles" y sale del programa
-[a = 2, b = 3, c = 4] no pasa por ningún condicional y pasa por la ultima linea retorna "scalane"
+[a = 2, b = 1, C = 2] pasa por #C4, retorna "isósceles" y sale del programa
+[a = 2, b = 4, c = 3] no pasa por ningún condicional y pasa por la ultima linea retorna "scalane"
 
 Como el test suite cubre todas las líneas de código tiene cobertura del 100%
 
